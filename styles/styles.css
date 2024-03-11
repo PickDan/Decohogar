@@ -48,3 +48,14 @@
     border-bottom: 60px;
     font-weight: 600;
 }
+
+.zoom {
+    transition: transform .2s; /* Agrega transición suave */
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% al pasar el cursor */
+}
