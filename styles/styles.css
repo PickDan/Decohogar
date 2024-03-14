@@ -51,7 +51,7 @@
 
 .zoom {
     transition: transform .2s; /* Agrega transición suave */
-    width: 300px;
+    width: 400px;
     height: 300px;
     margin: 0 auto;
 }
@@ -59,3 +59,30 @@
 .zoom:hover {
     transform: scale(1.1); /* Aumenta el tamaño al 110% al pasar el cursor */
 }
+.bg-yellow-soft {
+    background-color: #ffffcc; /* Color amarillo suave */
+  }
+
+  .bg-blue-soft {
+    background-color: #cfe4f8; /* Puedes ajustar este valor según tus preferencias */
+  }
+  
+  /* Verde claro suave */
+  .bg-green-soft {
+    background-color: #d9ead3; /* Puedes ajustar este valor según tus preferencias */
+  }
+  
+  /* Rosa claro suave */
+  .bg-pink-soft {
+    background-color: #f9cfe2; /* Puedes ajustar este valor según tus preferencias */
+  }
+  
+  /* Gris claro suave */
+  .bg-gray-soft {
+    background-color: #f2f2f2; /* Puedes ajustar este valor según tus preferencias */
+  }
+  
+  /* Morado claro suave */
+  .bg-purple-soft {
+    background-color: #e2d7f9; /* Puedes ajustar este valor según tus preferencias */
+  }

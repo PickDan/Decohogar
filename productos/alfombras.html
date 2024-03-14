@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfombras</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../scripts/script.js"></script>
+
+    <p class="text-muted"></p><a href="../index.html"><img src="../assets/images/icons/atras.png"
+            alt="" width="50"></a>
+            <style>
+                body {
+                    background-image: url('../assets/images/masVendidos/alfombrasFondo.JPG');
+                    background-size: cover; 
+                    background-position: center; 
+                }
+                .datos-container {
+            background-color: rgba(255, 255, 255, 0.8);  
+            /*padding: 20px; /*espaciado interno al contenedor */
+        }
+            </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main class="container">
+        <h1>Alfombras</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="../assets/images/masVendidos/alfombras1.JPG" class="img-thumbnail" alt="">
+            </div>
+            <div class="col-lg-6">
+                <div class="container p-5 border datos-container">
+                    <h4><small>Características del producto</small></h4>
+                    <p class="mb-0">
+                        Disponibles en una amplia variedad de materiales, colores, diseños y tamaños, las alfombras pueden adaptarse a cualquier estilo decorativo y necesidad práctica. Desde alfombras de lana suaves y mullidas hasta alfombras de fibra sintética duraderas y fáciles de limpiar, hay opciones para cada espacio y presupuesto.
+                    </p>
+                    <div class="row mt-3">
+                        <label>Estilos de alfombras: </label>
+                        <select class="form-select">
+                            <option>Figuras geométricas</option>
+                            <option>Clásicas</option>
+                            <option>Forma de animales</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Cantidad: </label>
+                        <select class="form-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-lg-6 text-center">
+                <button class="btn btn-success" id="alfombra" onclick="agregarProducto('Alfombra', 30)">Comprar</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

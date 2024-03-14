@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantas hornamentales</title>
+    <script src="../scripts/script.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <p class="text-muted">This text is muted.</p><a href="../index.html"><img src="../assets/images/icons/atras.png"
+            alt="" width="50"></a>
+    <style>
+        body {
+            background-image: url('../assets/images/masVendidos/hornamentalesFondo.JPG');
+            background-size: cover;
+            /* Ajusta la imagen para cubrir todo el fondo */
+            background-position: center;
+            /* Centra la imagen en el fondo */
+        }
+
+        .datos-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Cambia el color del fondo del contenedor de datos */
+            /* Puedes cambiar rgba(255, 255, 255, 0.8) a cualquier otro color que desees */
+            /* El último valor (0.8) controla la opacidad del color, donde 1 es completamente opaco y 0 es completamente transparente */
+            border-radius: 10px;
+            /* Agrega bordes redondeados al contenedor */
+            padding: 20px;
+            /* Agrega espaciado interno al contenedor */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main class="container">
+        <h1 style="color: aliceblue; ">Plantas hormanetales</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="../assets/images/masVendidos/bromelias.JPG" class="img-thumbnail" alt="Canasta de caña">
+            </div>
+            <div class="col-lg-6">
+                <div class="container p-5 border datos-container">
+                    <h4><small>Características del producto</small></h4>
+                    <p class="mb-0">
+                        Disponibles en una amplia variedad de formas, tamaños y colores, las plantas pueden adaptarse a cualquier estilo decorativo y necesidad de espacio. 
+                    </p>
+                    <div class="row mt-3">
+                        <label>Tipo de planta: </label>
+                        <select class="form-select">
+                            <option>Helechos</option>
+                            <option>Orquideas</option>
+                            <option>Bromelias</option>
+                            <option>Peperomias</option>
+                        </select>
+                    </div>
+
+                    <label for="comment">Otro tipo de planta o sugerencia:</label>
+                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-lg-6 text-center">
+                <button class="btn btn-success" id="planta" onclick="agregarProducto('Plantas', 15)">Comprar</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edredones</title>
+    <script src="../scripts/script.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <p class="text-muted"></p><a href="../index.html"><img src="../assets/images/icons/atras.png"
+            alt="" width="50"></a>
+            <style>
+                body {
+                    background-image: url('../assets/images/masVendidos/habitacion.JPG');
+                    background-size: cover; 
+                    background-position: center; 
+                }
+                .datos-container {
+            background-color: rgba(255, 255, 255, 0.8);  
+            /*padding: 20px; /*espaciado interno al contenedor */
+        }
+            </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main class="container">
+        <h1>Edredones<span class="badge bg-secondary">New</span></h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="../assets/images/productosInicio/edredon.JPG" class="img-thumbnail" alt="Canasta de caña">
+            </div>
+            <div class="col-lg-6">
+                <div class="container p-5 border datos-container">
+                    <h4><small>Características del producto</small></h4>
+                    <p class="mb-0">Disponibles en una amplia variedad de diseños, colores y tejidos, los edredones ofrecen una forma sencilla y efectiva de actualizar la decoración de cualquier dormitorio. Desde estampados vibrantes y modernos hasta texturas suaves y acogedoras, los edredones pueden adaptarse a cualquier estilo decorativo, añadiendo un toque de estilo y personalidad al espacio.</p>
+                    <div class="row mt-3">
+                        <label>Selecciona un diseño: </label>
+                        <select class="form-select">
+                            <option>Azul</option>
+                            <option>Rosa</option>
+                            <option>Gris</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="browser" class="form-label">Selecciona el tamaño: </label>
+                        <input class="form-control" list="browsers" name="browser" id="browser">
+                        <datalist id="browsers">
+                            <option value="Edredón individual 190×270 cm">
+                            <option value="Edredones de cuerpo y medio 205×270 cm">
+                            <option value="Edredón para cama doble 235×270 cm">
+                            <option value="Edredones para camas matrimoniales 250×270 cm">
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <label>Cantidad: </label>
+                        <select class="form-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-lg-6 text-center">
+                <button class="btn btn-success" id="edredon" onclick="agregarProducto('Edredon', 20)">Comprar</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

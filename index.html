@@ -12,13 +12,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/images/icons/iconoPagina.JPG" type="image/x-icon">
 </head>
 
-<body class="container">
+<body>
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">DecoHogar</a>
+        <a class="navbar-brand" href="./index.html">DecoHogar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -32,30 +33,33 @@
               <a class="nav-link" href="about.html">Acerca de nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="./help.html">
                 Ayuda
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Contacto</a>
+              <a class="nav-link" href="./offer.html">Ofertas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                Comentarios
+              <a class="nav-link disabled" href="">
+                Trabaja con nosotros 
               </a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success btn0" type="submit">Search</button>
-          </form>
+          <form class="d-flex">
+            <a href="./carrito.html" class="btn btn-outline-dark">
+              <img src="./assets/images/icons/carrito.JPG" alt="" width="40">
+              Carrito
+              <span class="badge bg-dark text-white ms-1 rounded-pill"></span>
+            </a>
+          </form>          
         </div>
       </div>
     </nav>
   </header>
   <hr>
   <main>
-    <h2>Nuevos productos</h2>
+    <h1><span class="badge bg-info">Nuevos productos cada semana</span></h1>
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -69,32 +73,32 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active d-item">
-          <img src="./assets/images/inicio/plantasH.jpg" class="d-block w-100 d-image" alt="..." width="100">
+          <img src="./assets/images/InterfazInicio/plantasH.jpg" class="d-block w-100 d-image" alt="..." width="100">
 
           <div class="carousel-caption d-none d-md-block">
-            <h5>Primer producto</h5>
+            <h5>Plantas hornamentales</h5>
             <p>Plantas hornamentales para hogar y oficina</p>
           </div>
         </div>
         <div class="carousel-item d-item">
-          <img src="./assets/images/inicio/electronicos.jpg" class="d-block w-100 d-img" alt="...">
+          <img src="./assets/images/InterfazInicio/electronicos.jpg" class="d-block w-100 d-img" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Sección de electrónicos</h5>
             <p>Aparatos eléctronicos para el hogar y la oficina</p>
           </div>
         </div>
         <div class="carousel-item d-item">
-          <img src="https://picsum.photos/id/598/600/400" class="d-block w-100 d-img" alt="...">
+          <img src="./assets/images/InterfazInicio/muebles.JPG" class="d-block w-100 d-img" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5>Articulos de habitaciones</h5>
+            <p>Variedad de muebles para cualquier habitación</p>
           </div>
         </div>
         <div class="carousel-item d-item">
-          <img src="https://picsum.photos/id/1068/600/400" class="d-block w-100 d-img" alt="...">
+          <img src="./assets/images/InterfazInicio/cocina.JPG" class="d-block w-100 d-img" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5>Cocina</h5>
+            <p>Desde utensillos hasta cristaleria</p>
           </div>
         </div>
       </div>
@@ -112,42 +116,45 @@
     <hr>
     <div class="row py-5">
       <div class="col-lg-5 m-auto text-center">
-        <h2>Productos más vendidos</h2>
+        <h2>Productos destacados</h2>
       </div>
 
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card border-0 bg-light mb-2">
-            <div class="card-body text-center">
-              <a href="./products/canasta.html" class="btn btn-primary">
-                <img src="./assets/images/inicio/Canasta.JPG" alt="" class="img-fluid" style="max-height: 150px;">
+            <div class="card-body text-center bg-yellow-soft">
+              <a href="./productos/edredon.html" class="btn btn-light">
+                <img src="./assets/images/productosInicio/edredon.JPG" alt="" class="img-fluid"
+                  style="max-height: 150px;">
               </a>
-              <h6>Canasta de caña</h6>
-              <p>4.99</p>
+              <h6>Edredones</h6>
+              <p>$20.00</p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card border-0 bg-light mb-2">
-            <div class="card-body text-center">
-              <a href="./products/cuadros.html" class="btn btn-primary">
-                <img src="./assets/images/inicio/cuadros.JPG" alt="" class="img-fluid" style="max-height: 150px;">
+            <div class="card-body text-center bg-green-soft">
+              <a href="./productos/cuadros.html" class="btn btn-light">
+                <img src="./assets/images/productosInicio/cuadros.JPG" alt="" class="img-fluid"
+                  style="max-height: 150px;">
               </a>
               <h6>Cuadros decorativos</h6>
-              <p>12.99</p>
+              <p>$12.99</p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card border-0 bg-light mb-2">
-            <div class="card-body text-center">
-              <a href="./products/espejos.html" class="btn btn-primary">
-                <img src="./assets/images/inicio/espejo.JPG" alt="" class="img-fluid" style="max-height: 150px;">
+            <div class="card-body text-center bg-pink-soft">
+              <a href="./productos/espejos.html" class="btn btn-light">
+                <img src="./assets/images/productosInicio/espejo.JPG" alt="" class="img-fluid"
+                  style="max-height: 150px;">
               </a>
               <h6>Espejos decorativos</h6>
-              <p>8.99</p>
+              <p>$9.99</p>
             </div>
           </div>
         </div>
@@ -156,102 +163,155 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card border-0 bg-light mb-2">
-            <div class="card-body text-center">
-              <a href="./products/plantas.html" class="btn btn-primary">
-                <img src="./assets/images/inicio/plantas.JPG" alt="" class="img-fluid" style="max-height: 150px;">
+            <div class="card-body text-center bg-blue-soft">
+              <a href="./productos/plantas.html" class="btn btn-light">
+                <img src="./assets/images/productosInicio/plantas.JPG" alt="" class="img-fluid"
+                  style="max-height: 150px;">
               </a>
               <h6>Plantas ornamentales</h6>
-              <p>6.99</p>
+              <p>$15.00</p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card border-0 bg-light mb-2">
-            <div class="card-body text-center">
-              <a href="./products/velas.html" class="btn btn-primary">
-                <img src="./assets/images/inicio/velas.JPG" alt="" class="img-fluid" style="max-height: 150px;">
+            <div class="card-body text-center bg-purple-soft">
+              <a href="./productos/velas.html" class="btn btn-light">
+                <img src="./assets/images/productosInicio/velas.JPG" alt="" class="img-fluid"
+                  style="max-height: 150px;">
               </a>
               <h6>Velas aromáticas</h6>
-              <p>3.99</p>
+              <p>$4.00</p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card border-0 bg-light mb-2">
-            <div class="card-body text-center">
-              <a href="./products/alfombras.html" class="btn btn-primary">
-                <img src="./assets/images/inicio/alfombras.JPG" alt="" class="img-fluid" style="max-height: 150px;">
+            <div class="card-body text-center bg-gray-soft">
+              <a href="./productos/alfombras.html" class="btn btn-light">
+                <img src="./assets/images/productosInicio/alfombras.JPG" alt="" class="img-fluid"
+                  style="max-height: 150px;">
               </a>
               <h6>Alfombras tejidas</h6>
-              <p>18.99</p>
+              <p>$30.00</p>
             </div>
           </div>
         </div>
-        <a href="./products.html">Explorar categorias</a>
+        <button type="button" class="btn btn-dark"><a href="products.html" style="color: aliceblue;">Explorar más
+            categorías</a></button>
       </div>
-
       <hr>
 
-
-      <div class="container">
+      <div class="container bg-light py-5">
         <div class="row">
           <div class="col">
             <h2 class="text-center">Acerca de los productos</h2>
           </div>
         </div>
-
+      
         <div class="row">
           <div class="col">
-            <div class="card mx-auto" style="width: 18rem;">
-              <img src="./assets/images/inicio/calidad/materiales.jpg" class="card-img-top" alt="...">
-              
+            <div class="card mx-auto border-0" style="max-width: 18rem;">
+              <img src="./assets/images/calidad/materiales.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <h5 class="card-title">Materiales de calidad</h5>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, maiores dolores ipsa, itaque iure est iusto quae ad aliquam totam rerum placeat voluptate esse consequuntur eius tempore quod nobis officia?
-                Quas dignissimos aliquam cum nisi quibusdam quam. Voluptate soluta delectus voluptatem dignissimos reiciendis iusto natus assumenda non, perferendis aspernatur perspiciatis odit. Eius rerum atque nam, architecto harum accusantium quod nobis!</p>
+                <p class="card-text">
+                  Nuestra empresa se compromete a utilizar únicamente materiales superiores que cumplen con los más altos estándares de durabilidad, funcionalidad y estética. Desde maderas nobles seleccionadas hasta tejidos resistentes y metales de primera calidad, cada material utilizado en nuestros productos es meticulosamente evaluado para garantizar su rendimiento y fiabilidad.
+                </p>
               </div>
             </div>
           </div>
-
+      
           <div class="col">
-            <div class="card mx-auto" style="width: 18rem;">
-              <img src="./assets/images/inicio/calidad/envios.jpg" class="card-img-top" alt="...">
+            <div class="card mx-auto border-0" style="max-width: 18rem;">
+              <img src="./assets/images/calidad/envios.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <h5 class="card-title">Envíos</h5>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, maiores dolores ipsa, itaque iure est iusto quae ad aliquam totam rerum placeat voluptate esse consequuntur eius tempore quod nobis officia?
-                  Quas dignissimos aliquam cum nisi quibusdam quam. Voluptate soluta delectus voluptatem dignissimos reiciendis iusto natus assumenda non, perferendis aspernatur perspiciatis odit. Eius rerum atque nam, architecto harum accusantium quod nobis!</p>
+                <p class="card-text">
+                  Trabajamos con socios logísticos de confianza y empleamos sistemas de gestión de inventario avanzados para garantizar que los productos estén disponibles y listos para ser enviados en el menor tiempo posible. Además, nos esforzamos por mantener una comunicación clara y transparente durante todo el proceso de envío, proporcionando actualizaciones en tiempo real sobre el estado de los pedidos y respondiendo rápidamente a cualquier pregunta o inquietud que puedan surgir.
+                </p>
               </div>
             </div>
           </div>
-
+      
           <div class="col">
-            <div class="card mx-auto" style="width: 18rem;">
-              <img src="./assets/images/inicio/calidad/maquinaria.jpg" class="card-img-top" alt="...">
+            <div class="card mx-auto border-0" style="max-width: 18rem;">
+              <img src="./assets/images/calidad/maquinaria.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
-                <h5 class="card-title">Fabricacion cuidadosa</h5>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, maiores dolores ipsa, itaque iure est iusto quae ad aliquam totam rerum placeat voluptate esse consequuntur eius tempore quod nobis officia?
-                  Quas dignissimos aliquam cum nisi quibusdam quam. Voluptate soluta delectus voluptatem dignissimos reiciendis iusto natus assumenda non, perferendis aspernatur perspiciatis odit. Eius rerum atque nam, architecto harum accusantium quod nobis!</p>
+                <h5 class="card-title">Fabricación cuidadosa</h5>
+                <p class="card-text">
+                  Contamos con instalaciones de vanguardia y un equipo de profesionales altamente capacitados que supervisan meticulosamente cada etapa del proceso de fabricación. Desde la concepción del diseño hasta la producción y el control de calidad, nos esforzamos por mantener los más altos estándares en cada paso del camino. Utilizamos tecnologías innovadoras y técnicas avanzadas para garantizar la precisión, la consistencia y la eficiencia en la fabricación de nuestros productos.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col">
-            <h2 class="text-center">Comentarios y calificaciones</h2>
-          </div>
-        </div>
-
-       
         </div>
       </div>
+    </div>
   </main>
+  <footer class="bg-info text-black text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Lo mejor para el hogar</h5>
+  
+          <p>
+            En nuestra empresa, nos enorgullece destacar nuestra dedicación a la fabricación de productos de la más alta calidad. Contamos con instalaciones de vanguardia y un equipo de profesionales altamente capacitados que supervisan meticulosamente cada etapa del proceso de fabricación. Desde la concepción del diseño hasta la producción y el control de calidad, nos esforzamos por mantener los más altos estándares en cada paso del camino. 
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Redes sociales</h5>
+          <ul class="list-unstyled mb-0">
+              <li>
+                  <a href="https://facebook.com" class="text-black"><i class="fab fa-facebook-f me-2"></i>Facebook</a>
+              </li>
+              <li>
+                  <a href="https://Instagram.com" class="text-black"><i class="fab fa-instagram me-2"></i>Instagram</a>
+              </li>
+              <li>
+                  <a href="https://Twitter.com" class="text-black"><i class="fab fa-twitter me-2"></i>Twitter</a>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Contactanos</h5>
+          <ul class="list-unstyled">
+              <li>
+                  <a href="#!" class="text-black"><i class="fas fa-envelope me-2"></i>Correo: decohogar@info.com</a>
+              </li>
+              <li>
+                  <a href="#!" class="text-black"><i class="fab fa-whatsapp me-2"></i>Whatsapp: 1234567890</a>
+              </li>
 
+          </ul>
+      </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Derechos reservados
+      <a class="text-black" href="https://mdbootstrap.com/"></a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 
-  <footer></footer>
-
+  
 </body>
+
 
 </html>
